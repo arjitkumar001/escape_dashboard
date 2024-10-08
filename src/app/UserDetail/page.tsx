@@ -65,7 +65,6 @@ const UserDetail = () => {
   });
  const findCountryByCity = () => {
     let countryName = "Not found";
-  
     country.some((item) => {
       const countryKey = Object.keys(item)[0]; 
       const cities = item[countryKey].cities; 
@@ -179,7 +178,6 @@ const UserDetail = () => {
       );
       if (res.status) {
         setSnackBar({ open: true, message: res?.data?.message });
-        router.push("/UserDetail");
         resetData();
       }
     } catch (error: any) {

@@ -119,7 +119,12 @@ export const cityList = [
   "Mogadishu",
   "Dakar",
 ];
-export const country = [
+interface Country {
+  [countryName: string]: {
+    cities: string[];
+  };
+}
+export const country:Country[] = [
   { Egypt: {cities:["Cairo", "Alexandria"]}},
   { Nigeria: {cities:["Lagos", "Kano"]} },
   { Tanzania: {cities:["Dar es Salaam"]} },
