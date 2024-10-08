@@ -245,7 +245,7 @@ const UserDetail = () => {
             <CommonAutocomplete
               label="Origin city"
               placeholder="Origin city"
-              options={["Edmonton Albarta"]}
+              options={["Edmonton Alberta"]}
               onChange={(event:any, value:string) =>
                 setUserData({ ...userData, origin_city: value })
               }
@@ -408,7 +408,7 @@ const UserDetail = () => {
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={snackBar.open}
         onClose={handleClose}
-        autoHideDuration={2000}
+        autoHideDuration={10000}
         message={snackBar.message}
         key={"top" + "center"}
       />

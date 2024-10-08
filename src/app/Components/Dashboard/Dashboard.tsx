@@ -645,7 +645,7 @@ export default function Dashboard() {
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={snackBar.open}
         onClose={handleClose}
-        autoHideDuration={2000}
+        autoHideDuration={10000}
         message={snackBar.message}
         key={"top" + "center"}
       />
